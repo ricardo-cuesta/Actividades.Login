@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#063A68"
+    tools:context=".Login_Activity">
+
+    <Button
+        android:id="@+id/bt_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="44dp"
+        android:text="registro"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="33dp"
+        android:backgroundTint="#FBFAFA"
+        android:ems="10"
+        android:hint="nombre"
+        android:inputType="textPersonName"
+        android:textColor="#FAF6F6"
+        android:textColorHint="#FFFAFA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_registro" />
+
+    <EditText
+        android:id="@+id/et_password_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="11dp"
+        android:backgroundTint="#FAF4F4"
+        android:ems="10"
+        android:hint="@string/et_password_in"
+        android:inputType="textPassword"
+        android:textColorHint="#F6F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_name_in" />
+
+    <Button
+        android:id="@+id/bt_ingresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/bt_ingresar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_password_in" />
+
+    <TextView
+        android:id="@+id/tv_verifica"
+        android:layout_width="239dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="100dp"
+        android:hint="@string/tv_verifica"
+        android:textColor="#FBF7F7"
+        android:textColorHint="#F6F0F0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bt_ingresar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

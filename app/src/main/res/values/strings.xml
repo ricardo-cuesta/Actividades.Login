@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Actividades.Login</string>
+    <string name="ACTIVIDADES">tv_titulo</string>
+    <string name="et_nombre">nombre</string>
+    <string name="et_cedula">Cedula</string>
+    <string name="et_correo">correo</string>
+    <string name="et_password">password</string>
+    <string name="et_confirma_password">confirmar password</string>
+    <string name="bt_aceptar">aceptar</string>
+    <string name="tv_resumen">resumen</string>
+    <string name="otra_Actividad">otra_actividad</string>
+    <string name="actividad3">actividad3</string>
+    <string name="actividad_r">actividad_r</string>
+    <string name="otra_Actividad2">actividad_2</string>
+    <string name="actividad_3">actividad_3</string>
+    <string name="et_name_in">name</string>
+    <string name="et_password_in">password</string>
+    <string name="bt_ingresar">ingresar</string>
+    <string name="tv_verifica">verifica</string>
+</resources>
