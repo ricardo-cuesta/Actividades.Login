@@ -15,7 +15,7 @@
         android:layout_marginTop="27dp"
         android:layout_marginRight="7dp"
         android:layout_marginBottom="712dp"
-        android:text="ACTIVIDADES"
+        android:text="@string/actividades"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
         android:textColorHint="@color/ic_launcher_background"
@@ -90,7 +90,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_cedula" />
+        app:layout_constraintTop_toBottomOf="@+id/et_cedula"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/et_password"
@@ -107,7 +108,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_correo" />
+        app:layout_constraintTop_toBottomOf="@+id/et_correo"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/et_confirma_password"
@@ -124,7 +126,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.101"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+        app:layout_constraintTop_toBottomOf="@+id/et_password"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/bt_aceptar"
