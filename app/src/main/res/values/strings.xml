@@ -13,4 +13,6 @@
     <string name="actividad_r">actividad_r</string>
     <string name="otra_Actividad2">actividad_2</string>
     <string name="actividad_3">actividad_3</string>
+    <string name="registro">registro</string>
+    <string name="splash">splash</string>
 </resources>

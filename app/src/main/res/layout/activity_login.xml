@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#024665"
     tools:context=".Login_Activity">
 
     <Button
@@ -12,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginTop="11dp"
-        android:text="splash"
+        android:text="@string/splash"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginTop="17dp"
-        android:text="registro"
+        android:text="@string/registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_splash" />
