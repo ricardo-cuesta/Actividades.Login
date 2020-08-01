@@ -18,4 +18,7 @@
     <string name="bt_ingresar">ingresar</string>
     <string name="tv_verifica">verifica</string>
     <string name="actividades">ACTIVIDADES</string>
+    <string name="tv_fecha_nacimiento">dd/mm/yyyy</string>
+    <string name="todo">TODO</string>
+    <string name="tv_fecha_nacimiento_lb">Fecha de Nacimiento</string>
 </resources>

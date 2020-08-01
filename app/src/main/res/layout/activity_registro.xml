@@ -116,28 +116,29 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="11dp"
-        android:layout_marginTop="3dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="11dp"
+        android:autofillHints=""
         android:backgroundTint="#FFFFFF"
         android:ems="10"
         android:hint="@string/et_confirma_password"
         android:inputType="textPassword"
         android:textColorHint="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/et_password"
-        android:autofillHints="" />
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
 
     <Button
         android:id="@+id/bt_aceptar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="3dp"
         android:text="@string/bt_aceptar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_confirma_password" />
 
@@ -146,12 +147,44 @@
         android:layout_width="325dp"
         android:layout_height="67dp"
         android:layout_marginStart="11dp"
-        android:layout_marginTop="7dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="11dp"
         android:text="@string/tv_resumen"
         android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bt_aceptar" />
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="13dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_confirma_password">
+
+        <TextView
+            android:id="@+id/tv_fecha_nacimiento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="@string/tv_fecha_nacimiento"
+            android:textAlignment="center"
+            android:textColor="#FAF9F9"
+            android:textSize="18sp"
+            android:verticalScrollbarPosition="left" />
+
+        <ImageButton
+            android:id="@+id/ib_calendario"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
