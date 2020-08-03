@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
         android:layout_marginTop="44dp"
-        android:text="registro"
+        android:text="@string/registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.873"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,12 +27,13 @@
         android:layout_marginTop="33dp"
         android:backgroundTint="#FBFAFA"
         android:ems="10"
-        android:hint="nombre"
+        android:autofillHints=""
         android:inputType="textPersonName"
         android:textColor="#FAF6F6"
         android:textColorHint="#FFFAFA"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:hint="@string/nombre"
         app:layout_constraintTop_toBottomOf="@+id/bt_registro" />
 
     <EditText
@@ -48,6 +49,7 @@
         android:textColorHint="#F6F0F0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints=""
         app:layout_constraintTop_toBottomOf="@+id/et_name_in" />
 
     <Button

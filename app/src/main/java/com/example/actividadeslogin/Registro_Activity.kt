@@ -3,22 +3,17 @@ package com.example.actividadeslogin
 import android.annotation.SuppressLint
 import android.app.DatePickerDialog
 import android.content.Intent
-import android.icu.text.MessageFormat.format
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.format.DateFormat.format
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.DatePicker
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_registro.*
-import java.lang.String.format
-import java.text.MessageFormat.format
 import java.text.SimpleDateFormat
-import java.time.MonthDay
 import java.util.*
 import java.util.Locale.US
-import java.util.Locale.forLanguageTag
 import kotlinx.android.synthetic.main.activity_registro.tv_fecha_nacimiento as tv_fecha_nacimiento1
 
 class Registro_Activity : AppCompatActivity() {
@@ -69,9 +64,13 @@ class Registro_Activity : AppCompatActivity() {
             var fecha :String = tv_fecha_nacimiento1.text.toString()
             val password_confirma=et_confirma_password.text.toString()
 
+
             if ((nombre!="")&&(cedula!="")&&(correo!="")&&(fecha!="")&&(password!="")){
                 if (password ==password_confirma) {
-                tv_resumen.text = "nombre: $nombre  \ndocumento:$cedula \ncorreo: $correo \nfecha de nacimiento: $fecha"
+                    tv_resumen.text =
+                        "nombre: $nombre  \ndocumento:$cedula \ncorreo: $correo \nfecha de nacimiento: $fecha"
+                    //  intent.putExtra("nombre", et_nombre.text.toString())
+
                 }else{tv_resumen.text = "la contraseña no coincide $password"}
             }
         }
@@ -84,14 +83,23 @@ class Registro_Activity : AppCompatActivity() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId==R.id.menu_actividad2){
-           tv_resumen.text ="axS"
-            val intent : Intent=Intent(this, Login_Activity::class.java)
-            startActivity(intent)        }
-        if (item.itemId==R.id.menu_actividad3){
-            tv_resumen.text ="axS"
-            val intent : Intent=Intent(this, Splash_Activity::class.java)
-            startActivity(intent)        }
+        if (item.itemId == R.id.menu_actividad2) {
+            tv_resumen.text = "axS"
+            val intent: Intent = Intent(this, Login_Activity::class.java)
+            val nombre = et_nombre.text.toString()
+            val cedula = et_cedula.text.toString()
+
+            intent.putExtra("nombre", et_nombre.text.toString())
+            intent.putExtra("cedula", et_cedula.text.toString().toLong())
+            Toast.makeText(this, "nombre: $nombre  cedula: $cedula", Toast.LENGTH_SHORT).show()
+            startActivity(intent)
+
+        }
+        if (item.itemId == R.id.menu_actividad3) {
+            tv_resumen.text = "axS"
+            val intent: Intent = Intent(this, Splash_Activity::class.java)
+            startActivity(intent)
+        }
         return super.onOptionsItemSelected(item)
     }
 

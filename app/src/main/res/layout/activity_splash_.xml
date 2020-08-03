@@ -14,7 +14,7 @@
         android:layout_marginStart="11dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="11dp"
-        android:text="registro"
+        android:text="@string/registro"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
